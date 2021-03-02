@@ -10,7 +10,7 @@
 
 * I first modified the $\rho$ to include a second term for the dipole by defining two more positions as $\frac{L}{4}$ and $\frac{3L}{4}$. The second term having a minus sign.
 * The first point charge was placed at $x=\frac{L}{4}$ and the second at $x=\frac{L}{4}$ so that they were separated by $d=0.5$, and then ran the code.
-* It produced what I expected: two spikes, one po
+* It produced what I expected: two spikes, one positive at the positive charge and a negative at the second with exponential decay away from them.
 
 ### Part B
 
@@ -18,3 +18,4 @@
 * After running the program, I noticed that the solutions wree converging to roughly the correct shape, but the exact solution's magnitude was much larger than the Jacobi method.
 * I made sure that this was not a mistake by combining combinations of grid resolution of $10^1$ to $10^3$ with the number of steps to the method by the same powers of 10 making sure the exact solution had the same resolution.
 * To ensure that this was not a scaling issue, I took the maximum of the exact method divided by the maximum of the Jacobi. I then subtracted them from eachother multiplying the Jacobi method, and this showed that there was difference in the shapes of the graph, meaning the Jacobi method was not just being scaled but also was still converging.
+* It seems that the jacobi method's maximum amplitude depends on the resolution of the graph being used, with few grid points leading to a smaller overall amplitude.
